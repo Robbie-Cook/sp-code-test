@@ -1,0 +1,19 @@
+{
+  "name": "spoke-code-test",
+  "version": "1.0.0",
+  "description": "Example code for a test tag parser",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Robbie-Cook/sp-code-test.git"
+  },
+  "author": "Robbie Cook <robbie@robbie.digital>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Robbie-Cook/sp-code-test/issues"
+  },
+  "homepage": "https://github.com/Robbie-Cook/sp-code-test#readme"
+}
