@@ -4,7 +4,7 @@
   "description": "Example code for a test tag parser",
   "main": "src/index.js",
   "scripts": {
-    "test": "npm run test"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -15,5 +15,14 @@
   "bugs": {
     "url": "https://github.com/Robbie-Cook/sp-code-test/issues"
   },
-  "homepage": "https://github.com/Robbie-Cook/sp-code-test#readme"
+  "homepage": "https://github.com/Robbie-Cook/sp-code-test#readme",
+  "devDependencies": {
+    "@types/jest": "^28.1.4",
+    "jest": "^28.1.2",
+    "ts-jest": "^28.0.5",
+    "typescript": "^4.7.4"
+  },
+  "dependencies": {
+    "mnemonist": "^0.39.2"
+  }
 }
