@@ -8,6 +8,10 @@ This parser assumes the tags will be uppercase e.g `<A>Foo</A>`.
 This code should be run with Node 14+, preferably Node 16+.
 A quick way to switch to Node v16 is with `nvm` e.g. `nvm use 16`
 
+## Run
+
+You can run this example directly in browser with StackBlitz: https://stackblitz.com/github/Robbie-Cook/tag-checker?file=README.md
+
 ## Run Locally
 
 Clone the project
