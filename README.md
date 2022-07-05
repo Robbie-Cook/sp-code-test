@@ -34,6 +34,12 @@ Run tests
   npm run test
 ```
 
+Allow script to be executed
+
+```bash
+  chmod +x ./bin/command-line.js
+```
+
 Test the command line script
 
 ```bash
