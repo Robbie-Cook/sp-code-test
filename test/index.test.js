@@ -36,4 +36,20 @@ describe("Test HTML string linting program", () => {
       )
     ).toEqual("Expected </B> found #");
   });
+
+  it("should work on smaller test", () => {
+    expect(parse("<A></A><B></B>")).toEqual("Correctly tagged paragraph");
+  });
+
+  it("should work on another smaller test", () => {
+    expect(parse("<A><B><C></C></B></A>")).toEqual(
+      "Correctly tagged paragraph"
+    );
+  });
+
+  it("should function on no tags", () => {
+    expect(parse("The following text has no tags")).toEqual(
+      "Correctly tagged paragraph"
+    );
+  });
 });

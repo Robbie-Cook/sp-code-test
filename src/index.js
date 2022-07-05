@@ -1,14 +1,14 @@
 // A handy stack implementation I found so I don't have to reimplement it :).
-import { Stack } from "mnemonist";
+const { Stack } = require("mnemonist");
 
 /**
  * A simple parsing function that takes a restricted XML implementation and
  * determines whether it's valid.
  */
-export function parse(input) {
+function parse(input) {
   const openingTagStack = new Stack();
 
-  for (let tag of input.match(/<[A-Z/]+>/g)) {
+  for (let tag of input.match(/<[A-Z/]+>/g) ?? []) {
     // If tag is a closing tag, compare with opening tag stack
     if (tag.charAt(1) === "/") {
       const tagName = tag.slice(2, -1);
@@ -28,3 +28,6 @@ export function parse(input) {
     ? "Correctly tagged paragraph"
     : `Expected </${openingTagStack.pop().slice(1, -1)}> found #`;
 }
+
+// Would move to ES6 but this is easier on the command line
+module.exports = { parse };

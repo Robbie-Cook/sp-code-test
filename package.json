@@ -6,6 +6,9 @@
   "scripts": {
     "test": "jest"
   },
+  "bin": {
+    "parse": "./bin/command-line.js"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Robbie-Cook/sp-code-test.git"
@@ -23,6 +26,7 @@
     "typescript": "^4.7.4"
   },
   "dependencies": {
+    "commander": "^9.3.0",
     "mnemonist": "^0.39.2"
   }
 }
